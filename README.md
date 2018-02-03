@@ -1,4 +1,26 @@
-# Kendo
+# Angular4-Features
+
+
+Template is now ng-template: 
+The template tag is now deprecated: you should use the ng-template tag instead. It still works though. Now Angular has its own template tag: ng-template. You will have a warning if you use the deprecated template somewhere when you update to Angular 4, so it will be easy to spot them.
+
+ngIf with else: 
+It’s now also possible to use an else syntax in your templates as shown below:
+
+Pipes: 
+Angular 4 introduced a new titlecase pipe. It changes the first letter of each word into uppercase:
+
+Http: 
+Adding search parameters to an HTTP request has been simplified:
+
+Earlier, it was done as:
+
+
+Router: 
+A new interface has been introduced to represent the parameters of a URL: ParamMap. Instead of using params or queryParams, you should now use param or queryParam, because they offer get() for retrieving one value and getAll() to retrieve all values (as query parameters can have multiple values for example).
+
+I guess I have covered all the major changes that has been introduced in Angular 4.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
@@ -25,4 +47,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
