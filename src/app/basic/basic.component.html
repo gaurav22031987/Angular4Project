@@ -1,0 +1,30 @@
+<ul>
+  <li>Template is now ng-template</li>
+  <ng-template [ngIf]="sampleData.length">
+    ng-template demo
+  </ng-template>
+
+  <li>ngIf with else</li>
+  <div *ngIf="!sampleData.length; else elseTemplate"> </div>
+  <ng-template #elseTemplate>
+    ngIf with else demo
+  </ng-template>
+
+
+  <li>Pipes: Angular 4 introduced a new titlecase pipe. It changes the first letter of each word into uppercase</li>
+  {{sampleData[0].userName | titlecase}}
+
+
+  <li>Use of HttpClient with Typed Response</li>
+  <div> HttpClient from @angular/common/http</div>
+
+  <li>Router: added new feature called ParamMap</li>
+  <a routerLink="/basic/3">ParamMap Demo</a>
+  <router-outlet></router-outlet>
+
+
+  <li>ngComponentOutlet</li>
+  <ng-container *ngComponentOutlet="HelloWorld"></ng-container>
+
+  <li>Http: Adding search parameters to an HTTP request has been simplified</li>
+</ul>
